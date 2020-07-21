@@ -2,7 +2,6 @@ import {makeStyles} from "@material-ui/core/styles";
 
 export const useStylesNavbar = makeStyles(theme => ({
     menuContainer: {
-        width: 250,
         background: '#511',
         height: '100%'
     },

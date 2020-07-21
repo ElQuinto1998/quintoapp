@@ -1,7 +1,8 @@
 import React from "react";
 import {Typography, Box} from "@material-ui/core";
 import {Navbar} from "../../components/navbar/Navbar";
-import {useStylesResume} from './ResumeStyles'
+import {useStylesResume} from './ResumeStyles';
+import { constantes } from "../../constants/constants";
 
 export const Resume = () => {
 
@@ -9,7 +10,7 @@ export const Resume = () => {
 
     return (
         <>
-            <Navbar/>
+            <Navbar title={constantes.TITULO_RESUME}/>
             <Box component={'header'} className={styles.container}>
                 <Typography variant={'h4'} align={'center'} className={styles.title}>
                     Experiencia laboral
