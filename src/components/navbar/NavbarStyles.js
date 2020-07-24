@@ -15,6 +15,6 @@ export const useStylesNavbar = makeStyles(theme => ({
         color: 'tan'
     },
     navBar: {
-        background: "#222"
+        background: "#085282"
     }
 }));

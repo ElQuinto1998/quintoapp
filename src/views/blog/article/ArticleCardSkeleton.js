@@ -20,7 +20,7 @@ const ArticleCardSkeleton = () => {
             style={{ marginBottom: 6 }}
           />
         }
-        subheader={<Skeleton animation="wave" height={10} width="40%" />}
+        subheader={<Skeleton animation="wave" height={10} width="50%" />}
       />
       <Skeleton animation="wave" variant="rect" className={classes.media} />
       <CardContent>
