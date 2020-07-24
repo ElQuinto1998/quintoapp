@@ -2,7 +2,8 @@ import {makeStyles} from "@material-ui/core/styles";
 
 export const useStylesResume = makeStyles(theme => ({
     container: {
-        background: "#233",
+        //background: "#233",
+        height: '100%'
     },
     timeLine: {
         position: 'relative',

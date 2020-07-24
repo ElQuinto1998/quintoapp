@@ -23,7 +23,7 @@ export const Resume = () => {
                             web</Typography>
                         <Typography variant={'body1'} align={'center'} style={{color: 'tomato'}}>Gravital
                             Software</Typography>
-                        <Typography variant={'subtitle'} align={'center'} style={{color: 'tan'}}>
+                        <Typography variant={'subtitle1'} align={'center'} style={{color: 'tan'}}>
                             Desarrollo de aplicaciones webs basadas en Python utilizando el
                             framework Django, testeo de aplicaciones webs y móviles con katalon Studio.
                         </Typography>
@@ -35,7 +35,7 @@ export const Resume = () => {
                             web</Typography>
                         <Typography variant={'body1'} align={'center'} style={{color: 'tomato'}}>Sofka
                             Technologies</Typography>
-                        <Typography variant={'subtitle'} align={'center'} style={{color: 'tan'}}>
+                        <Typography variant={'subtitle1'} align={'center'} style={{color: 'tan'}}>
                             Desarrollo y mantenimiento de aplicaciones webs utilizando los lenguajes Java y JavaScript.
                             Las tecnologias Sprint boot y Angular.
                             Uso de arquitectura limpia bajo el modelo DDD y programación reactiva, ademas, manejo de

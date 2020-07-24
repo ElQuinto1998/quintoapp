@@ -6,13 +6,15 @@ import { particles } from "../../constants/particlesParams";
 import { constantes } from "../../constants/constants";
 
 import Particles from "react-particles-js";
-import { ContactPhoneSharp } from "@material-ui/icons";
 
 const useStyles = makeStyles({
   particles: {
     position: "absolute",
     opacity: "0.6",
   },
+  navBar: {
+    position: 'center'
+  }
 });
 
 export const Home = () => {
@@ -20,7 +22,7 @@ export const Home = () => {
 
   return (
     <>
-      <Navbar title={constantes.TITULO_INICIO} />
+      <Navbar title={constantes.TITULO_INICIO} className={styles.navBar} />
       <Header />
       <Particles canvasClassName={styles.particles} params={{ particles }} />
     </>
