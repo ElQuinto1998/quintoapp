@@ -14,12 +14,12 @@ import {
 } from "@material-ui/core";
 import {
   Apps,
-  ArrowBack,
   AssignmentInd,
   ContactMail,
   Home,
-  ChromeReaderMode,
+  ChromeReaderMode
 } from "@material-ui/icons";
+import MenuIcon from '@material-ui/icons/Menu';
 import avatar from "../../images/foto.jpg";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import { useStylesNavbar } from "./NavbarStyles";
@@ -96,7 +96,7 @@ export const Navbar = ({ title }) => {
         <AppBar position={"static"} className={styles.navBar}>
           <Toolbar>
             <IconButton onClick={() => toogleSlider("right", true)}>
-              <ArrowBack style={{ color: "tomato" }} />
+              <MenuIcon style={{ color: "tomato" }} />
             </IconButton>
             <Typography variant={"h5"} style={{ color: "tan" }}>
               {title}

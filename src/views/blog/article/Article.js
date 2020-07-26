@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import ArticleCardSkeleton from "./ArticleCardSkeleton";
 import ArticleCard from "./ArticleCard";
-import { Grid } from "@material-ui/core";
+import {
+  Grid
+} from "@material-ui/core";
 import { useStylesArticle } from "./articleStyles";
+import BlogMenu from "../BlogMenu";
 
 const Article = () => {
-  const [loading] = useState(true);
+  const [loading] = useState(false);
   const [skeletonNumber] = useState([1, 2, 3, 4, 5, 6]);
   const [articles] = useState([
     {
@@ -43,30 +46,24 @@ const Article = () => {
       title: "Articulo 6",
       descripction: "Descripcion 6",
       creationDate: new Date(),
-    }
+    },
   ]);
 
   const styles = useStylesArticle();
 
   return (
     <div className={styles.articles}>
-      <Grid container className={styles.menuBlog} justify="center">
-        <ul className={styles.list}>
-          <li>Articulos</li>
-          <li>Videos</li>
-          <li>Imagenes</li>
-        </ul>
+      <Grid container justify="center">
+        <BlogMenu />
       </Grid>
       <Grid container justify="center">
-        {loading ? (
-          skeletonNumber.map((number) => {
-            return <ArticleCardSkeleton key={number} />;
-          })
-        ) : (
-          articles.map((article) => {
-            return <ArticleCard key={article.id} article={article} />;
-          })
-        )}
+        {loading
+          ? skeletonNumber.map((number) => {
+              return <ArticleCardSkeleton key={number} />;
+            })
+          : articles.map((article) => {
+              return <ArticleCard key={article.id} article={article} />;
+            })}
       </Grid>
     </div>
   );

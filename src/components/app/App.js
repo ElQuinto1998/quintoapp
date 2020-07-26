@@ -6,6 +6,7 @@ import { Resume } from "../../views/resume/Resume";
 import { Blog } from "../../views/blog/Blog";
 import Portafolio from "../../views/portafolio/Portafolio";
 import Contacto from "../../views/contacto/Contacto";
+import ArticleDetail from "../../views/blog/article/ArticleDetail";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route exact path={"/portafolio"} component={Portafolio} />
       <Route exact path={"/contacto"} component={Contacto} />
       <Route exact path={"/blog"} component={Blog} />
+      <Route exact path={"/blog/:id"} component={ArticleDetail} />
     </>
   );
 }

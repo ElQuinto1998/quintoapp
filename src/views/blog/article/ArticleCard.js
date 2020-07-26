@@ -9,7 +9,10 @@ import {
   CardContent,
   Card,
   Typography,
+  CardActions,
+  Button
 } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const ArticleCard = ({article}) => {
   console.log(article);
@@ -43,6 +46,9 @@ const ArticleCard = ({article}) => {
           }
         </Typography>
       </CardContent>
+      <CardActions>
+        <Button component={Link} to={`/blog/${55}`} size="small">Ver mas...</Button>
+      </CardActions>
     </Card>
   );
 };
