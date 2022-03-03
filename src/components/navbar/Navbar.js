@@ -41,12 +41,12 @@ export const Navbar = ({ title }) => {
   const menuIcons = [
     {
       listIcon: <Home />,
-      listText: "Inicio",
+      listText: "Home",
       listPath: "/",
     },
     {
       listIcon: <AssignmentInd />,
-      listText: "Experiencia",
+      listText: "Experience",
       listPath: "/resume",
     },
     {
@@ -61,8 +61,8 @@ export const Navbar = ({ title }) => {
     },
     {
       listIcon: <ContactMail />,
-      listText: "Contacto",
-      listPath: "/contacto",
+      listText: "Contact",
+      listPath: "/contact",
     },
   ];
 

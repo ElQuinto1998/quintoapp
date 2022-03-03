@@ -15,6 +15,7 @@ export const useStylesNavbar = makeStyles(theme => ({
         color: 'tan'
     },
     navBar: {
-        background: "#085282"
+        background: "transparent",
+        boxShadow: "0px 0px 5px tomato"
     }
 }));

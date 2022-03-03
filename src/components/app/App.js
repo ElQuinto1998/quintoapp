@@ -14,7 +14,7 @@ function App() {
       <Route exact path={"/"} component={Home} />
       <Route exact path={"/resume"} component={Resume} />
       <Route exact path={"/portafolio"} component={Portafolio} />
-      <Route exact path={"/contacto"} component={Contacto} />
+      <Route exact path={"/contact"} component={Contacto} />
       <Route exact path={"/blog"} component={Blog} />
       <Route exact path={"/blog/:id"} component={ArticleDetail} />
     </>
