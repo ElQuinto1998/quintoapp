@@ -16,12 +16,12 @@ export const Header = () => {
            </Grid>
             <Typography variant={'h4'} className={styles.title}>
                 <Typed
-                    strings={["Andres Quinto"]} typeSpeed={40}/>
+                    strings={["Andres Quinto."]} typeSpeed={40}/>
             </Typography>
             <br/>
             <Typography variant={'h5'} className={styles.subtitle}>
                 <Typed
-                    strings={["Be happy", "Be patient", "Be yourself"]}
+                    strings={["Be happy.", "Be patient.", "Be yourself."]}
                     typeSpeed={40}
                     backSpeed={60} loop/>
             </Typography>
